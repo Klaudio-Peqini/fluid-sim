@@ -1,0 +1,16 @@
+{
+  "base": {
+    "case": "cylinder",
+    "method": "lbm",
+    "ny": 24,
+    "duration": 0.08,
+    "backend": "numpy",
+    "frames": 4
+  },
+  "vary": {
+    "re": [
+      10,
+      20
+    ]
+  }
+}

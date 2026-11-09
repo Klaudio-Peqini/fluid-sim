@@ -1,0 +1,24 @@
+{
+  "case": "rotor",
+  "method": "cfd",
+  "duration": 0.15,
+  "rotor_count": 4,
+  "payload_mass": 4,
+  "vehicle_mass": 3,
+  "radius": 0.2811,
+  "rpm": 2640,
+  "torque": 0.429,
+  "grid": [
+    48,
+    48,
+    56
+  ],
+  "threads": 2,
+  "frames": 20,
+  "gif": [
+    "velocity",
+    "pressure"
+  ],
+  "plane": "xz",
+  "position": -0.42165
+}

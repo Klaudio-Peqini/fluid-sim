@@ -1,0 +1,11 @@
+{
+  "case": "polygon",
+  "polygon": "triangle.csv",
+  "diameter": 0.4,
+  "re": 20,
+  "duration": 2,
+  "ny": 64,
+  "gif": [
+    "all"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "case": "rotor",
+  "method": "cfd",
+  "duration": 0.2,
+  "radius": 0.1,
+  "rpm": 1800,
+  "thrust": 0.5,
+  "torque": 0.008,
+  "threads": 2,
+  "grid": [
+    40,
+    40,
+    48
+  ],
+  "frames": 24,
+  "gif": [
+    "all"
+  ],
+  "plane": "xz"
+}

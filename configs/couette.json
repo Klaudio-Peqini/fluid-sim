@@ -1,0 +1,12 @@
+{
+  "case": "couette",
+  "method": "cfd",
+  "duration": 8,
+  "ny": 32,
+  "nu": 0.1,
+  "wall_speed": 1,
+  "frames": 80,
+  "gif": [
+    "all"
+  ]
+}

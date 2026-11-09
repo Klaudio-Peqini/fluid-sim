@@ -1,0 +1,19 @@
+{
+  "base": {
+    "case": "airfoil",
+    "naca": "2412",
+    "ny": 96,
+    "re": 50,
+    "duration": 1,
+    "backend": "auto",
+    "frames": 12
+  },
+  "vary": {
+    "angle": [
+      -6,
+      0,
+      6,
+      12
+    ]
+  }
+}

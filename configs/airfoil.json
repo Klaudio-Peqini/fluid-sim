@@ -1,0 +1,16 @@
+{
+  "case": "airfoil",
+  "naca": "2412",
+  "angle": 6,
+  "ny": 96,
+  "re": 50,
+  "duration": 4,
+  "backend": "auto",
+  "threads": "auto",
+  "frames": 40,
+  "gif": [
+    "all"
+  ],
+  "velocity_style": "both",
+  "render_jobs": 2
+}

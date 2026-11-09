@@ -1,0 +1,13 @@
+{
+  "files": [
+    "framework_rotor_slices_above/velocity_vectors_xy_0.1.gif"
+  ],
+  "fields": [
+    "velocity"
+  ],
+  "velocity_style": "vectors",
+  "meaning": "Streamlines and vectors are instantaneous; they are not particle paths. Colour scales are fixed across time.",
+  "plane": "xy",
+  "position": 0.1,
+  "fps": 12
+}

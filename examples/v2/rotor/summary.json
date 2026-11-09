@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "case": "rotor",
+  "backend": "numpy",
+  "threads": 2,
+  "hardware": {
+    "logical_cpus": 9,
+    "affinity_cpus": 9,
+    "quota_cpus": null,
+    "usable_cpus": 9,
+    "numba_available": true
+  },
+  "steps": 227,
+  "solve_seconds": 10.523725887000182,
+  "rotors": [
+    {
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0.1,
+      "hub_radius": 0.020000000000000004,
+      "blades": 2,
+      "rpm": 1800.0,
+      "thrust_N": 0.5,
+      "torque_Nm": 0.008,
+      "direction": 1,
+      "epsilon_m": 0.03645833333333333,
+      "elements": 10,
+      "ramp_s": 0.04,
+      "phase_deg": 0
+    }
+  ],
+  "max_divergence": 5.1514348342607263e-14,
+  "max_thrust_absolute_error_N": 1.1102230246251565e-16,
+  "pressure_units": "Pa",
+  "scope": "3-D prescribed-load rotating actuator lines in initially still air; no blade surfaces, turbulence closure, fuselage or ground.",
+  "parallel_scope": "CPU-parallel 3-D pressure DST transforms; momentum and actuator deposition use NumPy.",
+  "rpm_interpretation": "RPM rotates force lines; thrust and torque are independent prescribed inputs, not aerodynamic predictions.",
+  "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+  "final": {
+    "time": 0.12,
+    "max_divergence": 4.973799150320701e-14,
+    "step": 227,
+    "applied_thrust_N": 0.5,
+    "rotor0_above_w": -0.8141252432678422,
+    "rotor0_plane_w": -2.8282506932728295,
+    "rotor0_below_w": -3.808250930000262
+  }
+}

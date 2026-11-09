@@ -1,0 +1,18 @@
+{
+  "files": [
+    "framework_smoke_couette/animations/velocity_vectors.gif",
+    "framework_smoke_couette/animations/velocity_streamlines.gif",
+    "framework_smoke_couette/animations/pressure.gif",
+    "framework_smoke_couette/animations/vorticity.gif"
+  ],
+  "fields": [
+    "velocity",
+    "pressure",
+    "vorticity"
+  ],
+  "velocity_style": "both",
+  "meaning": "Streamlines and vectors are instantaneous; they are not particle paths. Colour scales are fixed across time.",
+  "plane": "xz",
+  "position": 0.0,
+  "fps": 12
+}

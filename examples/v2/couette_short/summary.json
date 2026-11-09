@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "case": "couette",
+  "backend": "numpy",
+  "threads": 1,
+  "hardware": {
+    "logical_cpus": 9,
+    "affinity_cpus": 9,
+    "quota_cpus": null,
+    "usable_cpus": 9,
+    "numba_available": false
+  },
+  "solve_seconds": 0.007012948999999935,
+  "scope": "1-D fully developed plate equation, shown uniformly in x; no inlet/outlet channel development",
+  "parallel_scope": "Small 1-D plate solve remains serial; use parallel sweeps for multiple runs.",
+  "pressure_units": "p/rho0",
+  "pressure_interpretation": "Poiseuille p(x)=g*(L-x), constant in time under prescribed acceleration; Couette p=0.",
+  "relative_L2_error": 0.6527621783871664,
+  "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+  "final": {
+    "time": 0.2,
+    "relative_final_steady_error": 0.6527621783871664
+  }
+}

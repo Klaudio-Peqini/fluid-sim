@@ -1,0 +1,18 @@
+{
+  "files": [
+    "framework_rotor_example/animations/velocity_vectors_xz_0.gif",
+    "framework_rotor_example/animations/velocity_streamlines_xz_0.gif",
+    "framework_rotor_example/animations/pressure_xz_0.gif",
+    "framework_rotor_example/animations/vorticity_xz_0.gif"
+  ],
+  "fields": [
+    "velocity",
+    "pressure",
+    "vorticity"
+  ],
+  "velocity_style": "both",
+  "meaning": "Streamlines and vectors are instantaneous; they are not particle paths. Colour scales are fixed across time.",
+  "plane": "xz",
+  "position": 0.0,
+  "fps": 12
+}

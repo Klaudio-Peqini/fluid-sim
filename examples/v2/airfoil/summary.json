@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "case": "airfoil",
+  "backend": "numba",
+  "threads": 2,
+  "hardware": {
+    "logical_cpus": 9,
+    "affinity_cpus": 9,
+    "quota_cpus": null,
+    "usable_cpus": 9,
+    "numba_available": true
+  },
+  "steps": 2916,
+  "solve_seconds": 34.958168015999945,
+  "max_divergence": 4.948957910144713e-13,
+  "max_mach": 0.0,
+  "max_density_deviation": 0.0,
+  "max_flux_imbalance": 1.8984813721090177e-14,
+  "nx": 576,
+  "length": 6.0,
+  "height": 1.0,
+  "kinematic_viscosity": 0.016,
+  "pressure_units": "p/rho0; reference density 1",
+  "initial_condition": "CFD inlet profile / LBM still air with inlet ramp",
+  "parallel_scope": "Numba parallel cell kernels; 2-D sparse pressure LU remains serial",
+  "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+  "final": {
+    "time": 4.001346320159367,
+    "divergence_max": 2.735103810103112e-13,
+    "flux_in": 1.0,
+    "flux_out": 0.9999999999999853,
+    "step": 2916
+  }
+}

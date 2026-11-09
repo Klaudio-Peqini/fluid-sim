@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "case": "rotor",
+  "backend": "numpy",
+  "threads": 2,
+  "hardware": {
+    "logical_cpus": 9,
+    "affinity_cpus": 9,
+    "quota_cpus": null,
+    "usable_cpus": 9,
+    "numba_available": true
+  },
+  "steps": 132,
+  "solve_seconds": 5.5920817740000075,
+  "rotors": [
+    {
+      "center": [
+        -0.42165,
+        -0.42165,
+        0
+      ],
+      "radius": 0.2811,
+      "hub_radius": 0.056220000000000006,
+      "blades": 2,
+      "rpm": 2640.0,
+      "thrust_N": 17.161637499999998,
+      "torque_Nm": 0.429,
+      "direction": 1,
+      "epsilon_m": 0.184471875,
+      "elements": 10,
+      "ramp_s": 0.04,
+      "phase_deg": 0
+    },
+    {
+      "center": [
+        0.42165,
+        -0.42165,
+        0
+      ],
+      "radius": 0.2811,
+      "hub_radius": 0.056220000000000006,
+      "blades": 2,
+      "rpm": 2640.0,
+      "thrust_N": 17.161637499999998,
+      "torque_Nm": 0.429,
+      "direction": -1,
+      "epsilon_m": 0.184471875,
+      "elements": 10,
+      "ramp_s": 0.04,
+      "phase_deg": 45
+    },
+    {
+      "center": [
+        0.42165,
+        0.42165,
+        0
+      ],
+      "radius": 0.2811,
+      "hub_radius": 0.056220000000000006,
+      "blades": 2,
+      "rpm": 2640.0,
+      "thrust_N": 17.161637499999998,
+      "torque_Nm": 0.429,
+      "direction": 1,
+      "epsilon_m": 0.184471875,
+      "elements": 10,
+      "ramp_s": 0.04,
+      "phase_deg": 90
+    },
+    {
+      "center": [
+        -0.42165,
+        0.42165,
+        0
+      ],
+      "radius": 0.2811,
+      "hub_radius": 0.056220000000000006,
+      "blades": 2,
+      "rpm": 2640.0,
+      "thrust_N": 17.161637499999998,
+      "torque_Nm": 0.429,
+      "direction": -1,
+      "epsilon_m": 0.184471875,
+      "elements": 10,
+      "ramp_s": 0.04,
+      "phase_deg": 135
+    }
+  ],
+  "max_divergence": 6.661338147750939e-15,
+  "max_thrust_absolute_error_N": 7.105427357601002e-15,
+  "pressure_units": "Pa",
+  "scope": "3-D prescribed-load rotating actuator lines in initially still air; no blade surfaces, turbulence closure, fuselage or ground.",
+  "parallel_scope": "CPU-parallel 3-D pressure DST transforms; momentum and actuator deposition use NumPy.",
+  "rpm_interpretation": "RPM rotates force lines; thrust and torque are independent prescribed inputs, not aerodynamic predictions.",
+  "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+  "final": {
+    "time": 0.05,
+    "max_divergence": 6.217248937900877e-15,
+    "step": 132,
+    "applied_thrust_N": 68.64654999999999,
+    "rotor0_above_w": -0.723183674508029,
+    "rotor0_plane_w": -1.529970380827418,
+    "rotor0_below_w": -0.7655410059004286,
+    "rotor1_above_w": -0.7237348870424906,
+    "rotor1_plane_w": -1.5303246856412251,
+    "rotor1_below_w": -0.7648145602299357,
+    "rotor2_above_w": -0.7235325060977866,
+    "rotor2_plane_w": -1.5321745160973073,
+    "rotor2_below_w": -0.7649223555250843,
+    "rotor3_above_w": -0.7229182326870857,
+    "rotor3_plane_w": -1.5321544921827337,
+    "rotor3_below_w": -0.7656384159600788
+  }
+}

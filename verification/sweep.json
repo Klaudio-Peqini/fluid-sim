@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "jobs": 2,
+  "threads_per_job": 1,
+  "wall_seconds": 11.147182288000067,
+  "runs": [
+    {
+      "case": 0,
+      "exit_code": 0
+    },
+    {
+      "case": 1,
+      "exit_code": 0
+    }
+  ]
+}

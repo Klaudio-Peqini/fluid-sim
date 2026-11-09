@@ -1,0 +1,20 @@
+{
+  "couette": {
+    "frames": 100,
+    "size": [
+      1000,
+      450
+    ],
+    "bytes": 1805582,
+    "final_profile_matches_fd": true
+  },
+  "poiseuille": {
+    "frames": 20,
+    "size": [
+      1000,
+      450
+    ],
+    "bytes": 466412,
+    "final_profile_matches_fd": true
+  }
+}

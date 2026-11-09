@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "case": "cylinder",
+  "backend": "numba",
+  "threads": 2,
+  "hardware": {
+    "logical_cpus": 9,
+    "affinity_cpus": 9,
+    "quota_cpus": null,
+    "usable_cpus": 9,
+    "numba_available": true
+  },
+  "steps": 55,
+  "solve_seconds": 0.4253618140000981,
+  "max_divergence": 0.0,
+  "max_mach": 0.0014348837624127075,
+  "max_density_deviation": 0.001190922598012678,
+  "max_flux_imbalance": 0.0,
+  "nx": 288,
+  "length": 6.0,
+  "height": 1.0,
+  "kinematic_viscosity": 0.0125,
+  "pressure_units": "p/rho0; reference density 1",
+  "initial_condition": "CFD inlet profile / LBM still air with inlet ramp",
+  "parallel_scope": "Numba parallel cell kernels; 2-D sparse pressure LU remains serial",
+  "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+  "final": {
+    "time": 0.04010416666666669,
+    "tau": 0.563,
+    "mach_max": 0.0014348837624127075,
+    "density_deviation_max": 0.001190922598012678,
+    "flux_in": 0.015789906732702447,
+    "flux_out": -1.391911579835597e-07,
+    "step": 55
+  }
+}

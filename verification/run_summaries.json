@@ -1,0 +1,112 @@
+{
+  "lbm_cylinder_re20": {
+    "time": 4.000500000000346,
+    "tau": 0.5525,
+    "mach_max": 0.14390561682060385,
+    "density_deviation_max": 0.02189944461364468,
+    "flux_in": 1.0,
+    "flux_out": 1.4995655498183869,
+    "steps": 4572,
+    "wall_seconds": 11.098248483999669,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 50
+  },
+  "couette": {
+    "fd_relative_L2_error": 0.00028162526653869045,
+    "lbm_relative_L2_error": 0.0002891439266345395,
+    "requested_time": 8.0,
+    "lbm_actual_time": 8.0,
+    "lbm_tau": 0.8,
+    "note": "Gabimi kundrejt gjendjes s\u00eb q\u00ebndrueshme p\u00ebrmban edhe efektin e koh\u00ebs s\u00eb fundme."
+  },
+  "lbm_re100_short": {
+    "time": 0.30041666666666456,
+    "tau": 0.51575,
+    "mach_max": 0.004966981955676178,
+    "density_deviation_max": 0.0037109746775523256,
+    "flux_in": 0.05464540135855361,
+    "flux_out": 2.6999556820724395e-06,
+    "steps": 515,
+    "wall_seconds": 15.266243999999915,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 50
+  },
+  "cfd_cylinder_re100": {
+    "time": 18.000222077724864,
+    "divergence_max": 1.4210854715202004e-14,
+    "flux_in": 0.9999999999999999,
+    "flux_out": 1.0,
+    "steps": 75749,
+    "wall_seconds": 322.485606403,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 50
+  },
+  "cfd_two_cylinders_re20": {
+    "time": 4.002202199644929,
+    "divergence_max": 2.983724378680108e-14,
+    "flux_in": 0.9999999999999999,
+    "flux_out": 1.0000000000000018,
+    "steps": 1274,
+    "wall_seconds": 2.728265459999875,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 50
+  },
+  "lbm_cli_ellipse": {
+    "time": 0.3001249999999991,
+    "tau": 0.5525,
+    "mach_max": 0.0594943497555658,
+    "density_deviation_max": 0.04593243364269961,
+    "flux_in": 0.6548819285153646,
+    "flux_out": -0.0005124811245525544,
+    "steps": 343,
+    "wall_seconds": 10.379072326999903,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 50
+  },
+  "cfd_cylinder_re20": {
+    "time": 4.0004019460714755,
+    "divergence_max": 2.4424906541753444e-14,
+    "flux_in": 0.9999999999999999,
+    "flux_out": 1.0000000000000018,
+    "steps": 1269,
+    "wall_seconds": 3.144997687999876,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 50
+  },
+  "cfd_ellipse_re20": {
+    "time": 4.00107786516685,
+    "divergence_max": 2.819272593157507e-14,
+    "flux_in": 0.9999999999999999,
+    "flux_out": 1.0000000000000016,
+    "steps": 1439,
+    "wall_seconds": 3.8919249340001443,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 50
+  },
+  "poiseuille": {
+    "fd_relative_L2_error": 0.0003680814700003613,
+    "lbm_relative_L2_error": 0.0010412404774336854,
+    "requested_time": 8.0,
+    "lbm_actual_time": 8.0,
+    "lbm_tau": 0.8,
+    "note": "Gabimi kundrejt gjendjes s\u00eb q\u00ebndrueshme p\u00ebrmban edhe efektin e koh\u00ebs s\u00eb fundme."
+  },
+  "cfd_rectangle_re20": {
+    "time": 4.002358903277171,
+    "divergence_max": 3.6637359812630166e-14,
+    "flux_in": 0.9999999999999999,
+    "flux_out": 1.0000000000000018,
+    "steps": 1366,
+    "wall_seconds": 3.008960248999756,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 50
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "arguments": [
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "help",
+        "run"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "help",
+        "animate"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "help",
+        "sweep"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "objects"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "hardware"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "plan",
+        "--object",
+        "airfoil",
+        "--chord",
+        ".8",
+        "--angle",
+        "12",
+        "--ny",
+        "96",
+        "--threads",
+        "2"
+      ],
+      "exit_code": 0
+    },
+    {
+      "arguments": [
+        "run",
+        "--case",
+        "rotor",
+        "--method",
+        "lbm"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "plan",
+        "--case",
+        "airfoil",
+        "--ny",
+        "16"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "plan",
+        "--threads",
+        "9999"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "plan",
+        "--frames",
+        "1"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "run",
+        "--case",
+        "cylinder",
+        "--output",
+        "/workspace/scratch/afc078b734de/framework_smoke_cylinder"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "plan",
+        "--config",
+        "invalid_key.json"
+      ],
+      "exit_code": 2
+    },
+    {
+      "arguments": [
+        "run",
+        "--overwrite",
+        "unmarked folder"
+      ],
+      "exit_code": 2
+    }
+  ]
+}

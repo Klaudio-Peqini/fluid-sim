@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "metrics": {
+    "geometry_none": 0,
+    "geometry_rectangle": 64,
+    "geometry_cylinder": 52,
+    "geometry_ellipse": 100,
+    "geometry_two_cylinders": 104,
+    "geometry_airfoil": 489,
+    "cfd_none_upwind_parallel_error": 0.0,
+    "cfd_none_central_parallel_error": 6.217248937900877e-15,
+    "cfd_cylinder_upwind_parallel_error": 0.0,
+    "cfd_cylinder_central_parallel_error": 6.411537967210279e-14,
+    "cfd_ellipse_upwind_parallel_error": 0.0,
+    "cfd_ellipse_central_parallel_error": 4.39648317751562e-14,
+    "cfd_airfoil_upwind_parallel_error": 0.0,
+    "cfd_airfoil_central_parallel_error": 2.3092638912203256e-14,
+    "lbm_none_lbm_parallel_error": 0.0,
+    "lbm_cylinder_lbm_parallel_error": 0.0,
+    "lbm_ellipse_lbm_parallel_error": 0.0,
+    "lbm_airfoil_lbm_parallel_error": 0.0,
+    "rotor_fft_worker_difference": 0.0,
+    "rotor_force_torque_projection": "PASS",
+    "rotor_slice_coordinates": "PASS"
+  }
+}

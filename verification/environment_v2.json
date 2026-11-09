@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.4.6",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "numba": "0.65.1",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "hardware": {
+    "logical_cpus": 9,
+    "affinity_cpus": 9,
+    "quota_cpus": null,
+    "usable_cpus": 9,
+    "numba_available": true
+  }
+}

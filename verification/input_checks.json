@@ -1,0 +1,36 @@
+[
+  {
+    "command": "python run_case.py --duration .05 --output /tmp/tmpy4lbdhyu/case",
+    "expected_exit_code": 0,
+    "actual_exit_code": 0
+  },
+  {
+    "command": "python run_case.py --duration .05 --output /tmp/tmpy4lbdhyu/case",
+    "expected_exit_code": 2,
+    "actual_exit_code": 2
+  },
+  {
+    "command": "python 01_couette.py --nu -1",
+    "expected_exit_code": 2,
+    "actual_exit_code": 2
+  },
+  {
+    "command": "python 05_cilindri_re100.py --ny 40",
+    "expected_exit_code": 2,
+    "actual_exit_code": 2
+  },
+  {
+    "command": "python 07_dy_cilindra.py --gap .1",
+    "expected_exit_code": 2,
+    "actual_exit_code": 2
+  },
+  {
+    "command": "python 08_krahasimi_cfd_lbm.py --cfd-folder /tmp/tmpy4lbdhyu/case",
+    "expected_exit_code": 2,
+    "actual_exit_code": 2
+  },
+  {
+    "command": "comparison of fresh CFD/LBM Re20 folders",
+    "actual_exit_code": 0
+  }
+]

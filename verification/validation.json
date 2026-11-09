@@ -1,0 +1,81 @@
+{
+  "couette_fd_relative_error": 0.00028365969883181237,
+  "couette_lbm_relative_error": 0.0002891439266345395,
+  "poiseuille_fd_relative_error": 0.0003695169195921421,
+  "poiseuille_lbm_relative_error": 0.0010412404774336854,
+  "poiseuille_lbm_refinement_errors_n16_n32": [
+    0.002787676802207795,
+    0.0007017776673041218
+  ],
+  "none_cfd": {
+    "time": 0.253325667980748,
+    "divergence_max": 1.4119524234697256e-14,
+    "flux_in": 1.0,
+    "flux_out": 0.9999999999999984
+  },
+  "none_lbm": {
+    "time": 0.6008333333333354,
+    "tau": 0.5315,
+    "mach_max": 0.09069606895660962,
+    "density_deviation_max": 0.06802451362749973,
+    "flux_in": 0.9999999999999997,
+    "flux_out": 0.8792686078032705
+  },
+  "rectangle_cfd": {
+    "time": 0.25291780727156915,
+    "divergence_max": 1.561945017769517e-14,
+    "flux_in": 1.0,
+    "flux_out": 0.9999999999999988
+  },
+  "rectangle_lbm": {
+    "time": 0.6008333333333354,
+    "tau": 0.5315,
+    "mach_max": 0.13083092024969772,
+    "density_deviation_max": 0.07622997927371378,
+    "flux_in": 0.9999999999999997,
+    "flux_out": 0.8450637952302064
+  },
+  "cylinder_cfd": {
+    "time": 0.25275206126114186,
+    "divergence_max": 1.45924938799169e-14,
+    "flux_in": 1.0,
+    "flux_out": 0.9999999999999988
+  },
+  "cylinder_lbm": {
+    "time": 0.6008333333333354,
+    "tau": 0.5315,
+    "mach_max": 0.11463221282457596,
+    "density_deviation_max": 0.07455706878485557,
+    "flux_in": 0.9999999999999998,
+    "flux_out": 0.854863932973726
+  },
+  "ellipse_cfd": {
+    "time": 0.252388899392924,
+    "divergence_max": 2.2148949341271873e-14,
+    "flux_in": 1.0,
+    "flux_out": 0.9999999999999988
+  },
+  "ellipse_lbm": {
+    "time": 0.6008333333333354,
+    "tau": 0.5315,
+    "mach_max": 0.11663640839937549,
+    "density_deviation_max": 0.07642916912301922,
+    "flux_in": 0.9999999999999997,
+    "flux_out": 0.8527444107481641
+  },
+  "two_cylinders_cfd": {
+    "time": 0.2539439603577501,
+    "divergence_max": 2.398081733190338e-14,
+    "flux_in": 1.0,
+    "flux_out": 0.9999999999999987
+  },
+  "two_cylinders_lbm": {
+    "time": 0.6008333333333354,
+    "tau": 0.5315,
+    "mach_max": 0.11343789433714152,
+    "density_deviation_max": 0.07897088824214804,
+    "flux_in": 0.9999999999999997,
+    "flux_out": 0.8248872461023403
+  },
+  "elapsed_seconds": 11.457935333251953
+}

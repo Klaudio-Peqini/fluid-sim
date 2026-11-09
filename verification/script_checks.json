@@ -1,0 +1,50 @@
+[
+  {
+    "command": "python 01_couette.py",
+    "exit_code": 0
+  },
+  {
+    "command": "python 02_poiseuille.py",
+    "exit_code": 0
+  },
+  {
+    "command": "python 03_pengesa_drejtkendore.py",
+    "exit_code": 0
+  },
+  {
+    "command": "python 04_cilindri_re20.py",
+    "exit_code": 0
+  },
+  {
+    "command": "python 06_elipsa.py",
+    "exit_code": 0
+  },
+  {
+    "command": "python 07_dy_cilindra.py",
+    "exit_code": 0
+  },
+  {
+    "command": "python 08_krahasimi_cfd_lbm.py",
+    "exit_code": 0
+  },
+  {
+    "command": "python 08_krahasimi_cfd_lbm.py --re 100",
+    "exit_code": 0
+  },
+  {
+    "command": "python 04_cilindri_re20.py --method lbm --output results/lbm_cylinder_re20",
+    "exit_code": 0
+  },
+  {
+    "command": "python 05_cilindri_re100.py --method lbm --duration .3 --output results/lbm_re100_short",
+    "exit_code": 0
+  },
+  {
+    "command": "python run_case.py --method lbm --shape ellipse --angle 35 --duration .3 --gif --output results/lbm_cli_ellipse",
+    "exit_code": 0
+  },
+  {
+    "command": "python 05_cilindri_re100.py",
+    "exit_code": 0
+  }
+]

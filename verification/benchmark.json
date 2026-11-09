@@ -1,0 +1,69 @@
+{
+  "ny": 96,
+  "nx": 576,
+  "steps": 200,
+  "timing_scope": "Median of 3 warmed-up complete step loops; excludes JIT compilation, geometry and pressure-factorization setup, and plotting.",
+  "note": "Memory bandwidth and the serial 2-D pressure solve limit thread scaling. Results are hardware-specific.",
+  "methods": {
+    "cfd": {
+      "numpy": {
+        "seconds": 3.4267460339999616,
+        "max_abs_field_difference": 0.0,
+        "threads": 1,
+        "speedup_vs_numpy": 1.0,
+        "speedup_vs_numba_1": 0.7607979830232091
+      },
+      "numba_1": {
+        "seconds": 2.607061470999952,
+        "max_abs_field_difference": 0.0,
+        "threads": 1,
+        "speedup_vs_numpy": 1.3144093732034694,
+        "speedup_vs_numba_1": 1.0
+      },
+      "numba_2": {
+        "seconds": 2.5547990669999763,
+        "max_abs_field_difference": 0.0,
+        "threads": 2,
+        "speedup_vs_numpy": 1.341297669262063,
+        "speedup_vs_numba_1": 1.020456561408309
+      },
+      "numba_4": {
+        "seconds": 2.4384137839999767,
+        "max_abs_field_difference": 0.0,
+        "threads": 4,
+        "speedup_vs_numpy": 1.405317693200833,
+        "speedup_vs_numba_1": 1.0691628664940227
+      }
+    },
+    "lbm": {
+      "numpy": {
+        "seconds": 2.373343350000141,
+        "max_abs_field_difference": 0.0,
+        "threads": 1,
+        "speedup_vs_numpy": 1.0,
+        "speedup_vs_numba_1": 0.3979159623068611
+      },
+      "numba_1": {
+        "seconds": 0.9443912029998955,
+        "max_abs_field_difference": 3.6254332869134487e-13,
+        "threads": 1,
+        "speedup_vs_numpy": 2.5130934537097795,
+        "speedup_vs_numba_1": 1.0
+      },
+      "numba_2": {
+        "seconds": 0.6021309079999355,
+        "max_abs_field_difference": 3.6254332869134487e-13,
+        "threads": 2,
+        "speedup_vs_numpy": 3.9415736984562755,
+        "speedup_vs_numba_1": 1.5684150912246422
+      },
+      "numba_4": {
+        "seconds": 0.4254726550000214,
+        "max_abs_field_difference": 3.6254332869134487e-13,
+        "threads": 4,
+        "speedup_vs_numpy": 5.5781336875809835,
+        "speedup_vs_numba_1": 2.2196284341701067
+      }
+    }
+  }
+}

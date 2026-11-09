@@ -1,0 +1,47 @@
+{
+  "symmetric_airfoil_area_unit_chord": {
+    "polygon": 0.08220986684266611,
+    "analytic": 0.08220999999999996
+  },
+  "symmetric_mask_matches_vertical_reflection": true,
+  "0012_0_solid_cells": 488,
+  "2412_6_solid_cells": 489,
+  "2412_-6_solid_cells": 489,
+  "0012_15_solid_cells": 485,
+  "short_symmetric_cfd": {
+    "u_reflection_error": 1.5765166949677223e-14,
+    "v_antisymmetry_error": 1.3683498778505054e-14,
+    "time": 0.050160173371374316,
+    "divergence_max": 1.4871437414853972e-13,
+    "flux_in": 1.0,
+    "flux_out": 0.9999999999999922
+  },
+  "wing_default_check": {
+    "time": 4.001346320159367,
+    "divergence_max": 2.735103810103112e-13,
+    "flux_in": 1.0,
+    "flux_out": 0.9999999999999853,
+    "steps": 2916,
+    "wall_seconds": 38.25840454400003,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 40,
+    "gif_frames_verified": 40
+  },
+  "wing_lbm_check": {
+    "time": 0.600104166666669,
+    "tau": 0.6612800000000001,
+    "mach_max": 0.09713139616145161,
+    "density_deviation_max": 0.07594677257102389,
+    "flux_in": 1.0,
+    "flux_out": 0.8394145794834508,
+    "steps": 1646,
+    "wall_seconds": 16.305372595999984,
+    "status": "completed",
+    "source": "freshly computed",
+    "saved_frames": 16,
+    "gif_frames_verified": 16
+  },
+  "existing_cylinder_script_regression": "PASS: .05 model-time fresh run",
+  "new_airfoil_cli_and_closeups": "PASS: 0012, zero angle, .05 model-time fresh run"
+}

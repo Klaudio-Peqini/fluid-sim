@@ -1,0 +1,384 @@
+{
+  "framework_smoke_cylinder": {
+    "status": "PASS",
+    "case": "cylinder",
+    "backend": "numba",
+    "threads": 2,
+    "hardware": {
+      "logical_cpus": 9,
+      "affinity_cpus": 9,
+      "quota_cpus": null,
+      "usable_cpus": 9,
+      "numba_available": true
+    },
+    "steps": 110,
+    "solve_seconds": 0.4728664369999933,
+    "max_divergence": 0.0,
+    "max_mach": 0.005648908326527807,
+    "max_density_deviation": 0.004148685323951629,
+    "max_flux_imbalance": 0.0,
+    "nx": 288,
+    "length": 6.0,
+    "height": 1.0,
+    "kinematic_viscosity": 0.0125,
+    "pressure_units": "p/rho0; reference density 1",
+    "initial_condition": "CFD inlet profile / LBM still air with inlet ramp",
+    "parallel_scope": "Numba parallel cell kernels; 2-D sparse pressure LU remains serial",
+    "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+    "final": {
+      "time": 0.08020833333333352,
+      "tau": 0.563,
+      "mach_max": 0.005648908326527807,
+      "density_deviation_max": 0.004148685323951629,
+      "flux_in": 0.06216234231230064,
+      "flux_out": -3.991463206024427e-07,
+      "step": 110
+    }
+  },
+  "framework_smoke_rotor": {
+    "status": "PASS",
+    "case": "rotor",
+    "backend": "numpy",
+    "threads": 2,
+    "hardware": {
+      "logical_cpus": 9,
+      "affinity_cpus": 9,
+      "quota_cpus": null,
+      "usable_cpus": 9,
+      "numba_available": true
+    },
+    "steps": 72,
+    "solve_seconds": 90.98634682599982,
+    "rotors": [
+      {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "radius": 0.1,
+        "hub_radius": 0.020000000000000004,
+        "blades": 2,
+        "rpm": 1800.0,
+        "thrust_N": 0.5,
+        "torque_Nm": 0.008,
+        "direction": 1,
+        "epsilon_m": 0.058333333333333334,
+        "elements": 10,
+        "ramp_s": 0.04,
+        "phase_deg": 0
+      }
+    ],
+    "max_divergence": 7.105427357601002e-15,
+    "max_thrust_absolute_error_N": 1.1102230246251565e-16,
+    "pressure_units": "Pa",
+    "scope": "3-D prescribed-load rotating actuator lines in initially still air; no blade surfaces, turbulence closure, fuselage or ground.",
+    "parallel_scope": "CPU-parallel 3-D pressure DST transforms; momentum and actuator deposition use NumPy.",
+    "rpm_interpretation": "RPM rotates force lines; thrust and torque are independent prescribed inputs, not aerodynamic predictions.",
+    "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+    "final": {
+      "time": 0.04,
+      "max_divergence": 7.105427357601002e-15,
+      "step": 72,
+      "applied_thrust_N": 0.49992799693501383,
+      "rotor0_above_w": -0.3512173573619235,
+      "rotor0_plane_w": -0.8249741480807983,
+      "rotor0_below_w": -0.3830353601678601
+    }
+  },
+  "framework_smoke_couette": {
+    "status": "PASS",
+    "case": "couette",
+    "backend": "numpy",
+    "threads": 1,
+    "hardware": {
+      "logical_cpus": 9,
+      "affinity_cpus": 9,
+      "quota_cpus": null,
+      "usable_cpus": 9,
+      "numba_available": false
+    },
+    "solve_seconds": 0.007012948999999935,
+    "scope": "1-D fully developed plate equation, shown uniformly in x; no inlet/outlet channel development",
+    "parallel_scope": "Small 1-D plate solve remains serial; use parallel sweeps for multiple runs.",
+    "pressure_units": "p/rho0",
+    "pressure_interpretation": "Poiseuille p(x)=g*(L-x), constant in time under prescribed acceleration; Couette p=0.",
+    "relative_L2_error": 0.6527621783871664,
+    "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+    "final": {
+      "time": 0.2,
+      "relative_final_steady_error": 0.6527621783871664
+    }
+  },
+  "framework_airfoil_example": {
+    "status": "PASS",
+    "case": "airfoil",
+    "backend": "numba",
+    "threads": 2,
+    "hardware": {
+      "logical_cpus": 9,
+      "affinity_cpus": 9,
+      "quota_cpus": null,
+      "usable_cpus": 9,
+      "numba_available": true
+    },
+    "steps": 2916,
+    "solve_seconds": 34.958168015999945,
+    "max_divergence": 4.948957910144713e-13,
+    "max_mach": 0.0,
+    "max_density_deviation": 0.0,
+    "max_flux_imbalance": 1.8984813721090177e-14,
+    "nx": 576,
+    "length": 6.0,
+    "height": 1.0,
+    "kinematic_viscosity": 0.016,
+    "pressure_units": "p/rho0; reference density 1",
+    "initial_condition": "CFD inlet profile / LBM still air with inlet ramp",
+    "parallel_scope": "Numba parallel cell kernels; 2-D sparse pressure LU remains serial",
+    "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+    "final": {
+      "time": 4.001346320159367,
+      "divergence_max": 2.735103810103112e-13,
+      "flux_in": 1.0,
+      "flux_out": 0.9999999999999853,
+      "step": 2916
+    }
+  },
+  "framework_rotor_example": {
+    "status": "PASS",
+    "case": "rotor",
+    "backend": "numpy",
+    "threads": 2,
+    "hardware": {
+      "logical_cpus": 9,
+      "affinity_cpus": 9,
+      "quota_cpus": null,
+      "usable_cpus": 9,
+      "numba_available": true
+    },
+    "steps": 227,
+    "solve_seconds": 10.523725887000182,
+    "rotors": [
+      {
+        "center": [
+          0,
+          0,
+          0
+        ],
+        "radius": 0.1,
+        "hub_radius": 0.020000000000000004,
+        "blades": 2,
+        "rpm": 1800.0,
+        "thrust_N": 0.5,
+        "torque_Nm": 0.008,
+        "direction": 1,
+        "epsilon_m": 0.03645833333333333,
+        "elements": 10,
+        "ramp_s": 0.04,
+        "phase_deg": 0
+      }
+    ],
+    "max_divergence": 5.1514348342607263e-14,
+    "max_thrust_absolute_error_N": 1.1102230246251565e-16,
+    "pressure_units": "Pa",
+    "scope": "3-D prescribed-load rotating actuator lines in initially still air; no blade surfaces, turbulence closure, fuselage or ground.",
+    "parallel_scope": "CPU-parallel 3-D pressure DST transforms; momentum and actuator deposition use NumPy.",
+    "rpm_interpretation": "RPM rotates force lines; thrust and torque are independent prescribed inputs, not aerodynamic predictions.",
+    "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+    "final": {
+      "time": 0.12,
+      "max_divergence": 4.973799150320701e-14,
+      "step": 227,
+      "applied_thrust_N": 0.5,
+      "rotor0_above_w": -0.8141252432678422,
+      "rotor0_plane_w": -2.8282506932728295,
+      "rotor0_below_w": -3.808250930000262
+    }
+  },
+  "framework_quad_loaded_check": {
+    "status": "PASS",
+    "case": "rotor",
+    "backend": "numpy",
+    "threads": 2,
+    "hardware": {
+      "logical_cpus": 9,
+      "affinity_cpus": 9,
+      "quota_cpus": null,
+      "usable_cpus": 9,
+      "numba_available": true
+    },
+    "steps": 132,
+    "solve_seconds": 5.5920817740000075,
+    "rotors": [
+      {
+        "center": [
+          -0.42165,
+          -0.42165,
+          0
+        ],
+        "radius": 0.2811,
+        "hub_radius": 0.056220000000000006,
+        "blades": 2,
+        "rpm": 2640.0,
+        "thrust_N": 17.161637499999998,
+        "torque_Nm": 0.429,
+        "direction": 1,
+        "epsilon_m": 0.184471875,
+        "elements": 10,
+        "ramp_s": 0.04,
+        "phase_deg": 0
+      },
+      {
+        "center": [
+          0.42165,
+          -0.42165,
+          0
+        ],
+        "radius": 0.2811,
+        "hub_radius": 0.056220000000000006,
+        "blades": 2,
+        "rpm": 2640.0,
+        "thrust_N": 17.161637499999998,
+        "torque_Nm": 0.429,
+        "direction": -1,
+        "epsilon_m": 0.184471875,
+        "elements": 10,
+        "ramp_s": 0.04,
+        "phase_deg": 45
+      },
+      {
+        "center": [
+          0.42165,
+          0.42165,
+          0
+        ],
+        "radius": 0.2811,
+        "hub_radius": 0.056220000000000006,
+        "blades": 2,
+        "rpm": 2640.0,
+        "thrust_N": 17.161637499999998,
+        "torque_Nm": 0.429,
+        "direction": 1,
+        "epsilon_m": 0.184471875,
+        "elements": 10,
+        "ramp_s": 0.04,
+        "phase_deg": 90
+      },
+      {
+        "center": [
+          -0.42165,
+          0.42165,
+          0
+        ],
+        "radius": 0.2811,
+        "hub_radius": 0.056220000000000006,
+        "blades": 2,
+        "rpm": 2640.0,
+        "thrust_N": 17.161637499999998,
+        "torque_Nm": 0.429,
+        "direction": -1,
+        "epsilon_m": 0.184471875,
+        "elements": 10,
+        "ramp_s": 0.04,
+        "phase_deg": 135
+      }
+    ],
+    "max_divergence": 6.661338147750939e-15,
+    "max_thrust_absolute_error_N": 7.105427357601002e-15,
+    "pressure_units": "Pa",
+    "scope": "3-D prescribed-load rotating actuator lines in initially still air; no blade surfaces, turbulence closure, fuselage or ground.",
+    "parallel_scope": "CPU-parallel 3-D pressure DST transforms; momentum and actuator deposition use NumPy.",
+    "rpm_interpretation": "RPM rotates force lines; thrust and torque are independent prescribed inputs, not aerodynamic predictions.",
+    "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+    "final": {
+      "time": 0.05,
+      "max_divergence": 6.217248937900877e-15,
+      "step": 132,
+      "applied_thrust_N": 68.64654999999999,
+      "rotor0_above_w": -0.723183674508029,
+      "rotor0_plane_w": -1.529970380827418,
+      "rotor0_below_w": -0.7655410059004286,
+      "rotor1_above_w": -0.7237348870424906,
+      "rotor1_plane_w": -1.5303246856412251,
+      "rotor1_below_w": -0.7648145602299357,
+      "rotor2_above_w": -0.7235325060977866,
+      "rotor2_plane_w": -1.5321745160973073,
+      "rotor2_below_w": -0.7649223555250843,
+      "rotor3_above_w": -0.7229182326870857,
+      "rotor3_plane_w": -1.5321544921827337,
+      "rotor3_below_w": -0.7656384159600788
+    }
+  },
+  "framework_polygon_check": {
+    "status": "PASS",
+    "case": "polygon",
+    "backend": "numba",
+    "threads": 2,
+    "hardware": {
+      "logical_cpus": 9,
+      "affinity_cpus": 9,
+      "quota_cpus": null,
+      "usable_cpus": 9,
+      "numba_available": true
+    },
+    "steps": 147,
+    "solve_seconds": 0.5979508269999769,
+    "max_divergence": 0.0,
+    "max_mach": 0.005675682163997166,
+    "max_density_deviation": 0.004227672737625587,
+    "max_flux_imbalance": 0.0,
+    "nx": 384,
+    "length": 6.0,
+    "height": 1.0,
+    "kinematic_viscosity": 0.02,
+    "pressure_units": "p/rho0; reference density 1",
+    "initial_condition": "CFD inlet profile / LBM still air with inlet ramp",
+    "parallel_scope": "Numba parallel cell kernels; 2-D sparse pressure LU remains serial",
+    "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+    "final": {
+      "time": 0.08039062500000017,
+      "tau": 0.6344000000000001,
+      "mach_max": 0.005675682163997166,
+      "density_deviation_max": 0.004227672737625587,
+      "flux_in": 0.06243917979048905,
+      "flux_out": -4.0013776994490664e-07,
+      "step": 147
+    }
+  },
+  "framework_polygon_replay": {
+    "status": "PASS",
+    "case": "polygon",
+    "backend": "numba",
+    "threads": 2,
+    "hardware": {
+      "logical_cpus": 9,
+      "affinity_cpus": 9,
+      "quota_cpus": null,
+      "usable_cpus": 9,
+      "numba_available": true
+    },
+    "steps": 74,
+    "solve_seconds": 0.6907331590000467,
+    "max_divergence": 0.0,
+    "max_mach": 0.0014613660503391794,
+    "max_density_deviation": 0.0012327847285225069,
+    "max_flux_imbalance": 0.0,
+    "nx": 384,
+    "length": 6.0,
+    "height": 1.0,
+    "kinematic_viscosity": 0.02,
+    "pressure_units": "p/rho0; reference density 1",
+    "initial_condition": "CFD inlet profile / LBM still air with inlet ramp",
+    "parallel_scope": "Numba parallel cell kernels; 2-D sparse pressure LU remains serial",
+    "physical_validation": "Not experimentally validated; numerical checks are not aerodynamic validation.",
+    "final": {
+      "time": 0.04046875000000001,
+      "tau": 0.6344000000000001,
+      "mach_max": 0.0014613660503391794,
+      "density_deviation_max": 0.0012327847285225069,
+      "flux_in": 0.016076745476631814,
+      "flux_out": -1.285628728289089e-07,
+      "step": 74
+    }
+  }
+}

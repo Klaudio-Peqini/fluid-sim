@@ -1,8 +1,8 @@
-# Fluid Flows Framework — complete installation and user guide                   
+# Fluid Flows Framework — complete installation and user guide                    
 
 **English edition.** The equivalent Albanian guide is [README_Albanian.md](README_Albanian.md).
 
-This package teaches airflow and viscous-fluid simulation through Couette and Poiseuille flow, channel obstacles, NACA airfoils, and a prescribed-load rotor model. It runs as ordinary python3 code. Jupyter, a graphical interface, and external CFD frameworks are not required.
+This package teaches airflow and viscous-fluid simulation through Couette and Poiseuille flow, channel obstacles, NACA airfoils, and a prescribed-load rotor model. It runs as ordinary `python3` code. Jupyter, a graphical interface, and external CFD frameworks are not required.
 
 **Recommended route:** complete Sections 1–6 first. They take you from an extracted ZIP to a small verified run. Then choose the experiments and animation options you need. Run commands in a terminal, not at the python3 `>>>` prompt. Do not copy shell prompt characters such as `$`.
 

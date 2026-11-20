@@ -1,4 +1,4 @@
-# Fluid Flows Framework — complete installation and user guide                                    
+# Fluid Flows Framework — complete installation and user guide                                     
 
 **English edition.** The equivalent Albanian guide is [README_Albanian.md](README_Albanian.md).
 
